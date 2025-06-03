@@ -1,0 +1,21 @@
+<!-- custom_shape.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:left="0dp"
+            android:right="0dp"
+            android:top="100dp"
+            android:bottom="0dp">
+            <rotate
+                android:fromDegrees="45"
+                android:toDegrees="45"
+                android:pivotX="0%"
+                android:pivotY="0%">
+                <shape android:shape="rectangle">
+                    <solid android:color="#E2DAEC" />
+                </shape>
+            </rotate>
+        </item>
+
+
+</layer-list>

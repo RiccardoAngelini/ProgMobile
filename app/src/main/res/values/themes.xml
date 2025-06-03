@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.Material3.Light.NoActionBar">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="colorPrimary">@color/accentColor</item>
+        <item name="colorSecondary">@color/purple_200</item>
+        <item name="android:windowBackground">@color/backgroundGrey</item>
+
+    </style>
+
+    <style name="MyImageButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/accentColor</item>
+        <item name="android:tint">@android:color/white</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+</resources>

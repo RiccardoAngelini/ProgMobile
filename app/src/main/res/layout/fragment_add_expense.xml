@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/custom_background">
+
+    <!-- CardView per l'input del nome dell'expense -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/editTextExpenseName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter expense name"
+            android:layout_margin="15dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView per l'input dell'importo dell'expense -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editTextExpenseAmount"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:inputType="numberDecimal"
+            android:hint="Enter expense amount"
+            android:layout_margin="15dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView per il selettore del pagante -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payer:"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:layout_margin="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerPayer"
+                android:layout_width="match_parent"
+                 android:layout_margin="10dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView per l'elenco degli utenti da dividere -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/textViewDebtors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:padding="10dp"
+                android:text="Select debtors:"
+                android:textSize="18dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSplitUsers"
+            android:layout_width="match_parent"
+            android:layout_height="313dp"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:layout_below="@id/textViewDebtors"
+            />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <Button
+        android:id="@+id/buttonAddExpense"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Add Expense" />
+
+</LinearLayout>
+
+

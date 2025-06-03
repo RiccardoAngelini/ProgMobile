@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+<data>
+    <variable
+        name="binding"
+        type="com.example.mobile.CreateGroupFragment"
+        />
+    <variable
+        name="viewModel"
+        type="com.example.mobile.viewmodel.GroupViewModel" />
+</data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/custom_background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/groupName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Enter group name"
+
+        android:layout_margin="15dp"
+        />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="10dp">
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textSize="16dp"
+        />
+    <EditText
+        android:id="@+id/groupType"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="16dp"
+        android:hint="Enter group type"
+        android:layout_margin="15dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Pulsante per confermare la creazione del gruppo -->
+    <Button
+        android:textSize="18dp"
+        android:id="@+id/createGroupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Add Group"
+        android:layout_below="@id/groupType"/>
+
+</LinearLayout>
+</layout>

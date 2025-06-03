@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "645209907270",
+    "project_id": "mobile-3abcb",
+    "storage_bucket": "mobile-3abcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645209907270:android:5c3ef98f5e564ee74baa47",
+        "android_client_info": {
+          "package_name": "com.example.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2hfG99sw6eIiGhdwBRN7Ovl053xfxwZ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
